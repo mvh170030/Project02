@@ -11,7 +11,8 @@ public class Level01Controller : MonoBehaviour
     int _currentScore;
     public GameObject pauseMenu;
 
-    private void Update()
+
+    void Update()
     {
         // increase score
         if (Input.GetKeyDown(KeyCode.Q))
@@ -23,6 +24,14 @@ public class Level01Controller : MonoBehaviour
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
         }
+
+        if (pauseMenu.activeSelf)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        } else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 
     public void IncreaseScore(int scoreIncrease)
@@ -31,7 +40,12 @@ public class Level01Controller : MonoBehaviour
         _currentScore += scoreIncrease;
         // update score display
         _currentScoreTextView.text =
-            "Score: " + _currentScore.ToString();
+            "Defeat the enemy!";
+    }
+
+    public void ReplayLevel()
+    {
+        SceneManager.LoadScene("Level01");
     }
 
     public void ExitLevel()

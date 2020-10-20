@@ -177,7 +177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37d486e77543f9447b58ab87a9633c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingSong: {fileID: 8300000, guid: 3a72dc49bc38d2e409c882b3ec0d8384, type: 3}
   _highScoreTextView: {fileID: 1285769351}
 --- !u!1 &125818317
 GameObject:
@@ -501,13 +500,24 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 331366660}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 43416626}
-        m_MethodName: ResetData
-        m_Mode: 1
+      - m_Target: {fileID: 2109076123}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 125818317}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -930,7 +940,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &783363313
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1694,7 +1704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1285769351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1824,7 +1834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reset Data
+  m_Text: Controls
 --- !u!222 &1497981734
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2158,11 +2168,11 @@ RectTransform:
   m_Father: {fileID: 2109076124}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 170}
-  m_SizeDelta: {x: 600, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 20}
+  m_SizeDelta: {x: 600, y: 600}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1967952965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2195,7 +2205,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: David Hernandez
+  m_Text: 'WASD - Movement
+
+    Left click - Shoot
+
+    Left shift - Run
+
+    Spacebar
+    - Jump'
 --- !u!222 &1967952966
 CanvasRenderer:
   m_ObjectHideFlags: 0
