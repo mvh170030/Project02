@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class FireWeapon : MonoBehaviour
 {
+    public AudioClip playerShot;
+    AudioSource audioSource;
+
     [SerializeField] Camera cameraController;
     [SerializeField] Transform rayOrigin;
     [SerializeField] float shootDistance = 10f;
@@ -13,12 +16,18 @@ public class FireWeapon : MonoBehaviour
     [SerializeField] ParticleSystem _particleShot;
     RaycastHit objectHit; // store info about raycast hit
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Shoot();
             _particleShot.Play();
+            audioSource.PlayOneShot(playerShot, 1f);
         }
     }
 

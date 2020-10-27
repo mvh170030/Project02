@@ -10,6 +10,7 @@ public class Level01Controller : MonoBehaviour
 
     int _currentScore;
     public GameObject pauseMenu;
+    public GameObject crosshair;
 
 
     void Update()
@@ -23,6 +24,7 @@ public class Level01Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
+            crosshair.SetActive(!crosshair.activeSelf);
         }
 
         if (pauseMenu.activeSelf)

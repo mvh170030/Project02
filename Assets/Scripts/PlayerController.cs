@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public float _currentHealth;
 
     public GameObject deadMenu;
+    public GameObject crosshair;
 
     FPSInput _input = null;
     FPSMotor _motor = null;
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             deadMenu.SetActive(true);
             Debug.Log("Game over! You died");
+            crosshair.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
         }
     }

@@ -24,6 +24,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
@@ -59,6 +60,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -72,29 +75,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11732}
     - Class: 114
-      Script: {instanceID: 11850}
+      Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11852}
     - Class: 114
-      Script: {instanceID: 11918}
+      Script: {instanceID: 11900}
     - Class: 114
-      Script: {instanceID: 11958}
+      Script: {instanceID: 11920}
     - Class: 114
-      Script: {instanceID: 12008}
+      Script: {instanceID: 11928}
     - Class: 114
-      Script: {instanceID: 12124}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12596}
+      Script: {instanceID: 12012}
     - Class: 114
-      Script: {instanceID: 12604}
+      Script: {instanceID: 12128}
     - Class: 114
-      Script: {instanceID: 12952}
+      Script: {instanceID: 12150}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12600}
     - Class: 114
-      Script: {instanceID: 13434}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 13798}
+      Script: {instanceID: 12956}
+    - Class: 114
+      Script: {instanceID: 12986}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -153,17 +158,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11732}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11900}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 12042}
     - Class: 114
-      Script: {instanceID: 12124}
+      Script: {instanceID: 12128}
     - Class: 114
-      Script: {instanceID: 12370}
+      Script: {instanceID: 12374}
     - Class: 114
-      Script: {instanceID: 12604}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 12952}
+      Script: {instanceID: 12956}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -375,6 +380,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 064be3a59420f70ace30790e8b98d509
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyShooter
+  - hash:
+      serializedVersion: 2
       Hash: 6792730d96a38aeaabfd2f4564c15065
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -393,10 +404,16 @@ ScriptsOnlyBuild:
     className: TMP_Asset
   - hash:
       serializedVersion: 2
-      Hash: 1b852d5db6c096d637664a2a3bdc469f
+      Hash: 890a145d36c3c3542e1cc6cd7a943822
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Level01Controller
+  - hash:
+      serializedVersion: 2
+      Hash: 518d5ae6ec8eb3766aaeae13733c5d74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FireWeapon
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -531,7 +548,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 51740eb87e7408bd56f304a3dddb1a65
+      Hash: ee2ae0390cd0cb601ccc0cc31287950c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -655,20 +672,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 3dfef05275ddfa5e028170ac3b2cd8fb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FireWeapon
-  - hash:
-      serializedVersion: 2
-      Hash: 8904e86f18b8c93cc01588f1a3007008
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyShooter
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level01.unity
-  playerPath: C:/Users/David/Downloads/Project02-main/HernandezDavid_P02_Final/Project2.exe
+  playerPath: C:/Users/David/Documents/Scripting for Games/Project2/HernandezDavid_P02_Final/Project2.exe
